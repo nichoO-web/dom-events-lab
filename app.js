@@ -1,11 +1,11 @@
 /*-------------------------------- Constants --------------------------------*/
-const calculator = document.querySelector('#calculator');
-const buttons = document.querySelectorAll('.button');
-const display = document.querySelector('.display');
+
 /*-------------------------------- Variables --------------------------------*/
 
 /*------------------------ Cached Element References ------------------------*/
-
+const calculator = document.querySelector('#calculator');
+const buttons = document.querySelectorAll('.button');
+const display = document.querySelector('.display');
 /*----------------------------- Event Listeners -----------------------------*/
 calculator.addEventListener('click', (event) => {
   // This log is for testing purposes to verify we're getting the correct value
@@ -27,10 +27,6 @@ calculator.addEventListener('click', (event) => {
     // Do something with this operator
     const answer = eval(display.innerText);
     display.innerText = answer;
-  }
-
-  if (display.innerText === '') {
-    
   }
 });
 /*-------------------------------- Functions --------------------------------*/
